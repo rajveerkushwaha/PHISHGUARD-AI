@@ -113,25 +113,7 @@ npm start
 
 ---
 
-## 📊 System Architecture
 
-```mermaid
-flowchart TD
-    A[User Input: Suspicious URL] --> B[Frontend (React.js Dashboard)]
-    A --> J[Chrome Extension]
-    J --> C[Backend (Flask/FastAPI)]
-    B --> C
-    C --> D[Phishing Detection Engine]
-    D --> E[Rule-based Checks]
-    D --> F[AI/ML Model]
-    D --> G[External Threat APIs (VirusTotal, PhishTank)]
-    E --> H[Database Logging]
-    F --> H
-    G --> H
-    H --> I[Results → Dashboard/Extension]
-```
-
----
 
 ## 🔒 Security Measures
 - Secrets handled via `.env`, not hardcoded.  
